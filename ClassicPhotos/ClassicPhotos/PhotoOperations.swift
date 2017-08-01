@@ -98,7 +98,7 @@ class ImageFiltration: Operation
   
   func applySepiaFilter(_ image:UIImage) -> UIImage?
   {
-    let inputImage = CIImage(data: UIImagePNGRepresentation(uiimage)!)
+    let inputImage = CIImage(data: UIImagePNGRepresentation(image)!)
     
     if self.isCancelled { return nil }
     
